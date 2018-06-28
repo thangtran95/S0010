@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Product</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+    <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resources/vendor/WOW-master/css/libs/animate.css" rel="stylesheet">
+    <link href="resources/vendor/slick/slick.css" rel="stylesheet">
+    <link href="resources/vendor/slick/slick-theme.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    
+    <link href="resources/css/main.css" rel="stylesheet">
+
+   
+
+</head>
+
+<body>
+    <section class="main">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="social-top">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="header-top-right">
+                                <li><a href="register.html">Đăng ký</a></li>
+                                <li><a href="login.html">Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 hidden-xs">
+                            <div class="marquee">
+                                <marquee>Welcome to our store!</marquee>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-4">
+                            <div class="logo">
+                                <a href="index.html"><img src="resources/images/logo/logo.png"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-8">
+                            <ul class="header-icon">
+                                <li><a href="#" id="popup-cart"><i class="fa fa-shopping-cart"></i><sup>2</sup></a>
+                                    <div class="dropdown-cart">
+                                        <h4>Bạn có <span>2</span> sản phẩm trong giỏ hàng</h4>
+                                        <div>
+                                            <div class="dropdown-cart-1">
+                                                <img src="resources/images/product/pic-1.jpg">
+                                                <h3>Juyp cạp thường xuân trắng</h3>
+                                                <h5>550.000đ x 1</h5>
+                                                <a href="#">Xóa</a>
+                                            </div>
+
+                                            <div class="dropdown-cart-1">
+                                                <img src="resources/images/product/pic-1.jpg">
+                                                <h3>Juyp bút chì công sở màu nâu</h3>
+                                                <h5>550.000đ x 1</h5>
+                                                <a href="#">Xóa</a>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <h2>Tổng tiền <span>2.000.000đ</span></h2>
+                                        <div class="ed-flex">
+                                            <div class="btn-page">
+                                                <a href="#">Giỏ hàng</a>
+                                            </div>
+                                            <div class="btn-page">
+                                                <a href="#">Thanh toán</a>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+                                </li>
+                                <li><a href="#" id="btn-search-page"><i class="fa fa-search"></i></a>
+                                    <div class="form-search">
+                                        <div class="container">
+                                            <form>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Nhập từ khóa...">
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default" type="submit">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="close-search" >
+                                                <a href="#" id="close-search"><i class="fa fa-close"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" id="click-profile"><i class="fa fa-user"></i></a>
+                                    <ul class="ed-drop-menu">
+                                        <li><h4>Nguyễn A</h4></li>
+                                        <li><a href="#">Thông tin cá nhân</a></li>
+                                        <li><a href="#">Lịch sử mua hàng</a></li>
+                                        <li><a href="#">Đăng xuất</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" id="btn-toggle">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-navbar">
+                <nav class="navbar navbar-inverse" id="menu" role="navigation">
+                    <div class="container">
+                        <div class="navbar-collapse1" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="">
+                                    <a href="index.html">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">Giới thiệu</a>
+                                </li>
+                                <li class="has-submenu active">
+                                    <a href="product.html">Sản phẩm <i class="fa fa-angle-down icon-first-submenu"></i></a>
+                                    <ul class="submenu-1">
+                                        <li class="has-second-submenu"><a href="product.html">Submenu 1 <i class="fa fa-angle-right icon-second-submenu"></i></a>
+                                            <ul class="submenu-2">
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-second-submenu"><a href="product.html">Submenu 2 <i class="fa fa-angle-right icon-second-submenu"></i></a>
+                                            <ul class="submenu-2">
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                                <li><a href="product.html"> Submenu 1 - 1</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="product.html">Submenu 3 </a></li>
+                                        <li><a href="product.html">Submenu 4 </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="news.html">Bài viết</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+        </header>
+
+
+        <section class="wrapper">
+
+            <div class="back-home">
+                <div class="container">
+                    <h4><a href="index.html">Trang chủ</a> / Danh sách sản phẩm</h4>
+                    
+                </div>
+            </div>
+
+            <div class="prd-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <aside>
+                                <div class="danhmuc">
+                                    <ul class="drop-danhmuc">
+                                        <h4>Danh mục</h4>
+                                        <li>
+                                            <div class="title-1 ">Học tập <i class="fa fa-plus"></i></div>
+                                            <ul class="submenu-1">
+                                                <li><a href="#">Đồ chơi giáo dục</a> </li>
+                                                <li><a href="#">Magicbook</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-1 ">Đồ chơi <i class="fa fa-plus"></i></div>
+                                            <ul class="submenu-1">
+                                                <li><a href="#">Tai nghe</a> </li>
+                                                <li><a href="#">Bàn phím - Chuột</a> </li>
+                                                <li><a href="#">Thiết bị mạng</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-1 ">Thực phẩm <i class="fa fa-plus"></i></div>
+                                            <ul class="submenu-1">
+                                                <li><a href="#">Nồi cơm</a> </li>
+                                                <li><a href="#">Máy hút bụi</a> </li>
+                                                <li><a href="#">Máy giặt</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-1 nodropdown"><a href="#">Khác</a> </div>  
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="timkiem">
+                                    <ul class="drop-timkiem">
+                                        <h4>Tìm kiếm</h4>
+                                        <li class="form-timkiem">
+                                            <form>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Search">
+                                                    <div class="input-group-btn">
+                                                        <button class="btn btn-default" type="submit">
+                                                            <i class="glyphicon glyphicon-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <div class="title-1 ">Chọn giá <i class="fa fa-plus fa-minus"></i></div>
+                                            <ul class="submenu-1">
+                                                <div class="price-range-slider">
+                                                    <div id="slider-range" class="range-bar"></div>
+                                                    <p class="range-value">
+                                                        <input type="text" id="amount" readonly>
+                                                    </p>
+                                                </div>
+                                                <div class="clear-fix"></div>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-1 ">Màu sắc<i class="fa fa-plus fa-minus"></i></div>
+                                            <ul class="submenu-1 change-color">
+                                                <li class="active"><button class="click-color"></button></li>
+                                                <li class=""><button class="click-color"></button></li>
+                                                <li class=""><button class="click-color"></button></li>
+                                                <li class=""><button class="click-color"></button></li>
+                                                <li class=""><button class="click-color"></button></li>
+                                                <li class=""><button class="click-color"></button></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="title-1 ">Nhãn hiệu<i class="fa fa-plus fa-minus"></i></div>
+                                            <ul class="submenu-1 thuonghieu">
+                                                <li class="active"><button>Ben de lisi Home (60)</button></li>
+                                                <li class=""><button>RJR.John Rocha (83)</button></li>
+                                                <li class=""><button>Home Collection (3)</button></li>
+                                                <li class=""><button>Willis & Gambier (38)</button></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="left-advertise">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-5.png" class="img-responsive"></a>
+                                </div>
+                            </aside>
+                        </div>
+
+                        <div class="col-md-9 col-sm-8 padding-0">
+                            <div class="prd-page-right">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h5>Hiển thị 1 - 9 sản phẩm</h5>
+                                    </div>
+
+                                    <div class="col-sm-8" align="right">
+                                        <ul class="kieuxem">
+                                            <li class="active"><a class="margin-0" href="product.html"><i class="fa fa-th"></i></a></li>
+                                            <li><a href="product-list.html"><i class="fa fa-th-list"></i></a></li>
+                                        </ul>
+                                        <div class="dropdown">
+                                            <span>Sắp xếp: </span>
+                                            <button class="dropdown-toggle" type="button" data-toggle="dropdown">Mới nhất
+                                              <span class="fa fa-angle-down"></span></button>
+                                              <ul class="dropdown-menu">
+                                                <li><a href="#">Sale</a></li>
+                                                <li><a href="#">Cũ nhất</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-5.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-1.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-2.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-3.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-4.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-6.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-7.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-8.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="box-product">
+                                        <div class="pic-prd">
+                                            <img src="resources/images/product/product-3.jpg" class="img-responsive" alt="">
+                                            <ul>
+                                                <li><a href="product-detail.html"><i class="fa fa-link"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-cart-plus"></i></a></li>
+                                            </ul>
+                                            <div class="logo-new">
+                                                <img src="resources/images/logo/new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="txt-prd">
+                                            <a href="product-detail.html"><h5>Quà tặng chocolate Vinmax</h5></a>
+                                            <h6>450.000 <span>600.000</span></h6>
+                                            <h4>-33%</h4>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="phantrang">
+                                        <ul class="pagination">
+                                            <li class="disabled"><span><i class="fa fa-long-arrow-left"></i></span></li>
+                                            <li class="active"><span>1</span></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#" rel="next"><i class="fa fa-long-arrow-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefit padding-0">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 padding-0">
+                            <div class="box-bene">
+                                <div class="pic-bene">
+                                    <img class="pic-bene-1" src="resources/images/icon/icon-5.png">
+                                    <img class="pic-bene-2" src="resources/images/icon/icon-5-1.png">
+                                </div>
+                                <h4>Hỗ trợ 24/7</h4>
+                                <p>Đội ngũ hỗ trợ nhanh chóng</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 padding-0">
+                            <div class="box-bene box-bene-2">
+                                <div class="pic-bene">
+                                    <img class="pic-bene-1" src="resources/images/icon/icon-6.png">
+                                    <img class="pic-bene-2" src="resources/images/icon/icon-6-1.png">
+                                </div>
+                                <h4>Sản phẩm chất lượng</h4>
+                                <p>Cung cấp những món quà hoàn hảo cho người thân của bạn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-sm-push-6 col-md-push-0 padding-0">
+                            <div class="box-bene">
+                                <div class="pic-bene">
+                                    <img class="pic-bene-1" src="resources/images/icon/icon-7.png">
+                                    <img class="pic-bene-2" src="resources/images/icon/icon-7-1.png">
+                                </div>
+                                <h4>Miễn phí vận chuyển</h4>
+                                <p>Vận chuyển trên thế giới cho các đơn hàng trên 200.000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-sm-pull-6 col-md-pull-0 padding-0">
+                            <div class="box-bene box-bene-2">
+                                <div class="pic-bene">
+                                    <img class="pic-bene-1" src="resources/images/icon/icon-8.png">
+                                    <img class="pic-bene-2" src="resources/images/icon/icon-8-1.png">
+                                </div>
+                                <h4>Đổi trả 100%</h4>
+                                <p>Đổi trả 100% nếu có vấn đề trong vòng 1 tuần đầu tiên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        
+        <a href="javascript:" id="top" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+        
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="box-1">
+                            <h4>Giới thiệu</h4>
+                            <ul>
+                                <li>Phasellus posuere vehicula sem sitdapibus. Pellentesque malesuada diam augue semper sollicitudin.</li>
+                                <li>
+                                    <ul class="social-top">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li><img src="resources/images/logo/bocongthuong.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+                        <div class="box-1">
+                            <h4>Hổ trợ</h4>
+                            <ul>
+                                <li><a href="login.html">Đăng nhập</a></li>
+                                <li><a href="register.html">Đăng ký</a></li>
+                                <li><a href="cart.html">Giỏ hàng</a></li>
+                                <li><a href="wish-list.html">Sản phẩm yêu thích</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box-1">
+                            <h4>Liên hệ</h4>
+                            <ul>
+                                <li><i class="fa fa-phone"></i> (+04) 195-776 992</li>
+                                <li><i class="fa fa-send-o"></i> contact@yoursite.com</li>
+                                <li><i class="fa fa-map-marker"></i> Tầng 8 Ladeco, 266 Đội Cấn, Hà Nội, Việt Nam</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="box-1">
+                            <h4>Khuyến mãi đặc biệt</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-11.jpg" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-12.jpg" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-13.jpg" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-14.jpg" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-15.jpg" class="img-responsive"></a>
+                                </div>
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <a href="#"><img src="resources/images/khuyenmai/km-16.jpg" class="img-responsive"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-ft">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <ul class="bottom-ft-1">
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Quy định sử dụng</a></li>
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5">
+                            <ul class="bottom-ft-2">
+                                <li><a href="#"><img src="resources/images/icon/icon-11.png" alt=""></a></li>
+                                <li><a href="#"><img src="resources/images/icon/icon-12.png" alt=""></a></li>
+                                <li><a href="#"><img src="resources/images/icon/icon-13.png" alt=""></a></li>
+                                <li><a href="#"><img src="resources/images/icon/icon-14.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+   <!-- jQuery -->
+    <script src="resources/vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+    <script src="resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="resources/vendor/slick/slick.js"></script>
+    <script src="resources/js/slick_custom.js"></script>
+    <script src="resources/js/main.js"></script>
+
+</body>
+
+</html>

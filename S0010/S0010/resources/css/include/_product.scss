@@ -1,0 +1,331 @@
+.prd-page{
+	padding: 50px 0;
+	aside{
+		.danhmuc{
+			.drop-danhmuc{
+				padding-bottom: 10px;
+				margin-bottom: 40px;
+				h4{
+					color: $black;
+					text-transform: uppercase;
+					padding: 15px 0;
+					font-size: 16px;
+					margin-top: 0;
+					font-weight: 600;
+				}
+				li{
+					display: block;
+					.title-1{
+						position: relative;
+						font-size: 16px;
+						font-weight: 400;
+						padding: 10px 20px;
+						cursor: pointer;
+						display: flex;
+						align-items: center;
+						i{
+							position: absolute;
+							right: 20px;
+							font-size: 12px;
+						}
+					}
+					.submenu-1{
+						padding-left: 40px;
+						display: none;
+						li{
+							a{
+								font-size: 15px;
+								color: $black;
+								margin: 4px 0;
+								&:hover{
+									color: $blue;
+								}
+							}
+						}
+					}
+					.nodropdown{
+						a{
+							color: $black;
+							&:hover{
+								color: $blue;
+							}
+						}
+					}
+				}
+			}
+		}
+		.timkiem{
+			.drop-timkiem{
+				padding-bottom: 10px;
+				margin-bottom: 40px;
+				h4{
+					color: $black;
+					text-transform: uppercase;
+					padding: 0 15px 15px 0px;
+					font-size: 16px;
+					margin-top: 0;
+					font-weight: 600;
+				}
+				.form-timkiem{
+					background: $blue;
+					padding: 20px;
+					margin-bottom: 30px;
+					form{
+						input{
+							background: transparent;
+							border: 0;
+							border-bottom: 1px solid #fff;
+							box-shadow: none;
+							border-radius: 0;
+							color: #fff;
+							&::placeholder{
+								color: #fff;
+							}
+						}
+						button{
+							background: transparent;
+							border: 0;
+							box-shadow: none;
+							outline: none;
+							font-size: 18px;
+							color: #fff;
+						}
+					}
+				}
+				>li{
+					.title-1{
+						position: relative;
+						font-size: 16px;
+						font-weight: 500;
+						padding: 10px 20px;
+						cursor: pointer;
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: flex;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						align-items: center;
+						>i{
+							position: absolute;
+							right: 20px;
+							font-size: 12px;
+						}
+					}
+					.change-color{
+						margin-bottom: 30px;
+						padding-left: 15px;
+						li{
+							display: inline-block;
+							width: 35px;
+							height: 35px;
+							padding: 2px;
+							margin-bottom: 7px;
+							.click-color{
+								display: inline-block;
+								width: 100%;
+								height: 100%;
+								border: 0;
+								border-color: unset;
+								outline: none;
+
+							}
+							&.active{
+								border: 2px solid #c2c2c2;
+							}
+							&:nth-child(1){
+								.click-color{
+									background: yellow;
+								}
+							}
+							&:nth-child(2){
+								.click-color{
+									background: red;
+								}
+							}
+							&:nth-child(3){
+								.click-color{
+									background: green;
+								}
+							}
+							&:nth-child(4){
+								.click-color{
+									background: blue;
+								}
+							}
+							&:nth-child(5){
+								.click-color{
+									background: pink;
+								}
+							}
+							&:nth-child(6){
+								.click-color{
+									background: gray;
+								}
+							}
+						}
+					}
+					.thuonghieu{
+						margin-bottom: 30px;
+						padding-left: 15px;
+						li{
+							display: block;
+							button{
+								border: 0;
+								background: 0;
+								color: $black;
+								font-size: 16px;
+								margin: 3px 0;
+								outline: 0;
+							}
+							&.active{
+								button{
+									color: $blue;
+									font-weight: 600;									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.left-advertise{
+			>a{
+				width: 100%;
+				img{
+					width: 100%;
+				}
+			}
+			margin-bottom: 40px;
+		}
+	}
+	.prd-page-right{
+		border-bottom: 1px solid #e1e1e1;
+		margin-bottom: 30px;
+		.kieuxem{
+			position: relative;	
+			display: inline-block;
+			li{
+				display: inline-block;
+				a{
+					display: inline-block;
+					font-size: 18px;
+					color: $black;
+					width: 35px;
+					height: 35px;
+					text-align: center;
+					line-height: 36px;
+					margin-right: 10px;
+					transition: all .5s ease;
+					&:hover{
+						color: $color;
+					}
+				}
+				&.active{
+					a{
+						color: $color;
+					}
+				}
+			}
+		}
+		.dropdown{
+			display: inline-block;
+			button{
+				background: transparent;
+				border: 0;
+				padding: 10px 20px;
+				margin-left: 10px;
+				span{
+					margin-left: 5px;
+				}
+			}
+			ul{
+				right: 0;
+				left: unset;
+				li{
+					display: block;
+				}
+			}
+		}
+		@include down(xs){
+			text-align: center;
+			.col-sm-8{
+				text-align: center;
+			}
+		}
+	}
+
+}
+
+.phantrang{
+	text-align: center;
+	ul{
+		li{
+			a, span{
+				border-radius: 0% !important;
+				margin: 0 4px;
+				color: $black;
+				border: 0px solid #f8f8f8;
+				transition: all .5s ease;
+				background: transparent;
+			}
+			&.active, &:hover{
+				a, span{
+					border: 1px solid $blue;
+					color: $color !important;
+					background: transparent !important;
+					border: 0;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+/*--- /.price-range-slider ---*/
+
+.price-range-slider {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.price-range-slider .range-value {
+    margin: 0;
+}
+.price-range-slider .range-value input {
+    width: 100%;
+    background: none;
+    color: #444444;
+    font-size: 15px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    margin: 20px 0 20px 10px;
+    text-align: left;
+}
+.price-range-slider .range-bar {
+    border: none;
+    background: #000;
+    height: 3px;
+    width: 96%;
+    margin-left: 8px;
+}
+.price-range-slider .range-bar .ui-slider-range {
+    background: #2d719d;
+}
+.price-range-slider .range-bar .ui-slider-handle {
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    border: 2px solid #2d719d;
+    height: 17px;
+    width: 17px;
+    top: -0.52em;
+    cursor: pointer;
+}
+.price-range-slider .range-bar .ui-slider-handle + span {
+    background: #2d719d;
+}
+
+/*--- /.price-range-slider ---*/
